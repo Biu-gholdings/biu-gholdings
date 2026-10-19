@@ -18,6 +18,8 @@
         </include>
     </source>
     <php>
+        <!-- Test-only key so CI runs without a .env file. Not used anywhere outside PHPUnit. -->
+        <env name="APP_KEY" value="base64:RGN3/gAlMpvXCqWLgjvS/bwIFY83vf2LE9U2tUA6uno="/>
         <env name="APP_ENV" value="testing"/>
         <env name="APP_MAINTENANCE_DRIVER" value="file"/>
         <env name="BCRYPT_ROUNDS" value="4"/>
